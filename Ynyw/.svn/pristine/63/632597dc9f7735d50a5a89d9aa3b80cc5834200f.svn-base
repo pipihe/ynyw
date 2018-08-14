@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+ 										http://www.springframework.org/schema/beans/spring-beans.xsd   
+ 										http://www.springframework.org/schema/aop    
+ 										http://www.springframework.org/schema/aop/spring-aop.xsd   
+ 										http://www.springframework.org/schema/jee    
+ 										http://www.springframework.org/schema/jee/spring-jee.xsd   
+ 										http://www.springframework.org/schema/lang    
+ 										http://www.springframework.org/schema/lang/spring-lang.xsd   
+ 										http://www.springframework.org/schema/context    
+ 										http://www.springframework.org/schema/context/spring-context.xsd   
+ 										http://www.springframework.org/schema/tx    
+ 										http://www.springframework.org/schema/tx/spring-tx.xsd   
+ 										http://www.springframework.org/schema/util    
+ 										http://www.springframework.org/schema/util/spring-util.xsd   
+ 										http://www.springframework.org/schema/mvc    
+ 										http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+
+
+	<!-- 自定义请求跳转到JSP -->
+	<!-- ================================================== -->
+	<!-- <bean id="这里填写URL，以/开头" class="org.springframework.web.servlet.mvc.ParameterizableViewController"> 
+		<property name="viewName" value="这里填写JSP的路径/路径是以/WEB-INF/jsp为根路径，并不用写.jsp后缀，其它都需要写,如:/bg/index" 
+		/> </bean> -->
+	<context:component-scan base-package="com.huawei.ynyw" />
+
+
+	<!-- 下面的不要动 -->
+
+	<!-- 国际化 <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" 
+		/> -->
+	<!-- 响应结果过滤 -->
+	<mvc:annotation-driven>
+		<!-- <mvc:message-converters>
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/html;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+			<bean
+				class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/html;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters> -->
+		<mvc:message-converters register-defaults="true">
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<constructor-arg value="UTF-8" />
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<!-- 映射静态资源文件 -->
+	<mvc:resources location="/" mapping="/**" />
+
+	<!-- 配置SpringMVC -->
+	<!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver"> -->
+	<bean id="jspViewResolver" class="com.huawei.HuaweiViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/pages" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!--权限拦截器 <mvc:interceptors> <mvc:interceptor> <mvc:mapping path="" /> <bean 
+		class="net.yse.hi2.interceptor.CheckUserAuthorityInterceptor" /> </mvc:interceptor> 
+		</mvc:interceptors> -->
+
+</beans> 

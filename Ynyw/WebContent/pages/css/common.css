@@ -1,0 +1,148 @@
+﻿/*通用样式设置*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, em, img,
+	ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl,
+	dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody,
+	tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+a {
+   text-decoration: none;
+   cursor:pointer;
+  
+ }
+a:hover{color:#ff0000;}
+   
+
+html,body{
+   height:100%;
+ }
+ .wrapper{
+   width: 100%;
+   height:100%;
+   font-family: "微软雅黑";
+   font-size: 16px;
+   background-color: #f0f2f5;
+   min-width: 1263px;
+   min-height:618px;
+ }
+ /*hearder*/
+.hearder{
+	width: 100%;
+	height:10%;
+	background-color: #FFF;
+	background-size: cover;
+	margin-bottom: 20px;
+}
+.main{
+	width: calc(100% - 100px);
+	margin: 0 auto;
+	height:calc(90% - 50px);
+}
+ /*下拉框通用样式*/ 
+.drop{
+    width: 18%;
+    height:100%;
+    float: left;
+    margin-left: 1%;   	
+}
+.drop2{
+    width: calc(22% - 28px);
+    height:100%;
+    float: left;
+    margin-left: 1%;	   	
+}
+.drop3{
+    width:29%;
+    height:100%;
+    float: left;
+    margin-left: 1%;	   	
+}
+.drop_word{
+	width: 70px;
+	line-height: 40px;
+    display: block;
+    color: #2e2e2e;
+    font-size: 14px;
+    float: left;
+}
+.drop_word2{
+	width:56px;
+    line-height: 40px;
+    display: block;
+    color: #2e2e2e;
+    font-size: 14px;
+    float: left; 
+}
+.drop_kuang{
+	width: 30%;
+    height: 70%;
+    border: #acb3bd solid 1px;
+    margin-top: 7px;
+    margin-left: 5px;
+    float: left;
+}
+.drop_kuang2{
+	width: 49%;
+    height: 70%;
+    border: #acb3bd solid 1px;
+    margin-top: 7px;
+    float: left;
+}
+.drop_btn{
+	width:8%;
+    height:100%;
+    float: left;
+    margin-left: 30px;
+}
+.drop_btn span{
+	width: 100%;
+	height: 30px;
+	display: inline-block;
+	background-color:#2a87ff;
+	border-radius: 6px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 3px;
+    color: #fff;
+}
+ /*下拉框通用样式end*/ 
+ @media screen and (min-width: 1280px){
+.drop_btn span{
+	height: 25px;
+	font-size: 12px;
+	line-height: 25px;
+	margin-top: 5px;
+}
+.drop_word,.drop_word2{
+	line-height: 36px;
+}
+}
+@media screen and (min-width: 1366px){
+.drop_btn span{
+	height: 25px;
+	font-size: 12px;
+	line-height: 25px;
+	margin-top: 5px;
+}
+.drop_word,.drop_word2{
+	line-height: 34px;
+}
+}
+@media screen and (min-width: 1920px){
+.drop_btn span{
+	height: 30px;
+	font-size: 14px;
+	line-height:30px;
+	margin-top:3px;
+}
+.drop_word,.drop_word2{
+	line-height:40px;
+}
+}

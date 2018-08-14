@@ -1,0 +1,157 @@
+/*引用特殊字体*/
+@font-face {
+  font-family: 'Digital';   /*字体名称*/
+  src:url(../font/Digital.TTF);/*字体源文件*/
+}
+div{
+	font-family: "Digital.TTF";
+}
+/*自有业务监控页面样式*/
+.hearder_com{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	top: calc(50% - 20px);
+}
+/*头部左侧搜索框样式start*/
+.hearder_left{
+	width:65%;
+	height:100%;
+	margin-left: 50px;
+	float: left;
+} 
+/*右侧时间显示样式start*/
+.hearder_right{
+  	width: 24%;
+    height: 100%;
+    float: right;
+}
+/*右侧时间显示样式end*/
+.timetext{
+	width: 150px;
+	height:100%;
+	color:#3d6fff;
+	font-size: 18px;
+	line-height: 40px;
+	background: url(../images/timetext.png) 10px center no-repeat;
+	padding-left: 40px;
+}
+.time{
+	font-size:24px;
+	font-family:"Digital";
+	color: #3d6fff;
+	vertical-align: middle;
+}
+/*左侧tab切换样式*/
+.main_left{
+	width:176px;
+	height: 100%;
+	background-color: #f0f2f5;
+	background: url(../images/line.png) no-repeat;
+	float: left;
+}
+.main_left ul{
+	width: 85%;
+	height: 500px;
+	font-size: 18px;
+	font-weight: bold;
+	float: right;
+	padding-top: 20px;
+}
+.main_left ul li span{
+	width:70%;
+	height:40px;	
+	margin: 30px 0;	
+	padding-left: 30%;
+	line-height: 43px;
+	display: block;
+}
+.main_left_active{
+	background: url(../images/btn.png) 0 center no-repeat;
+    color: #1177fb;
+}
+.main_left_none{
+	background: url(../images/btn_blue.png) 0 center no-repeat;
+	color: #fff;
+}
+
+/*表格区域*/
+.main_right{
+	width: calc(100% - 176px);
+	height: 100%;
+	float: left;
+	background-color:#fff;
+}
+.charts{
+	width: 95%;
+	height:75%;
+	margin: 0  auto;
+	margin-top:2%;
+}
+ @media screen and (min-width: 1280px){
+ .hearder_right{
+    width: 27%;
+    height: 100%;
+    float: right;
+    padding-left: 0%;
+ }
+ .hearder_com {
+    height: 30px;
+}
+.analyse_btn span{
+	height: 25px;
+	font-size: 12px;
+	line-height: 25px;
+}
+.main_left ul {
+    width: 74%;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.main_left ul li span {
+    height: 40px;
+    }
+}
+ @media screen and (min-width: 1366px){
+.hearder_com{
+    height: 30px;
+}
+.analyse_btn span{
+	height: 25px;
+	font-size: 12px;
+	line-height: 25px;
+}
+.main_left ul {
+    width: 74%;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.main_left ul li span {
+    height: 40px;
+    }
+}
+ @media screen and (min-width: 1920px){
+.hearder_right{
+	  width: 24%;
+    height: 100%;
+    float: right;
+}
+.hearder_com{
+    height: 40px;
+}
+.analyse_btn span{
+	  height: 25px;
+	  font-size: 12px;
+	  line-height: 25px;
+}
+.main_left ul {
+		width: 85%;
+	  font-size: 18px;
+	  padding-top: 20px;
+}
+.main_left ul li span{
+	  height:46px;
+}
+}
+
+

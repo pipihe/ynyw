@@ -1,0 +1,104 @@
+.main{
+	width: calc(100% - 100px);
+	margin: 0 auto;
+	height:calc(90% - 50px);
+	background-color: #fff;
+}
+/*自有业务监控页面样式*/
+.hearder_com{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	top: calc(50% - 20px);
+}
+/*头部左侧时间单选样式*/
+.hearder_left{
+	width:17%;
+	height:100%;
+	padding-left: 5%;
+	float: left;
+	font-size: 14px;
+}
+.hearder_left ul{
+	width:100%;
+}
+.hearder_left li{
+	width: 32%;
+	height: 100%;
+	float: left;
+	line-height: 40px;
+}
+.hearder_left li span{
+	width: 18px;
+    height: 18px;
+    background-image: url(../images/icon1.png);
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-top: -3px;
+    margin-right: 3px;
+}
+.hearder_left ul li:first-child span{
+	   background-image: url(../images/icon2.png);
+}
+/*头部右侧搜索框样式start*/
+.hearder_right{
+	width:65%;
+	height:100%;
+	float: left;
+}  
+/*头部右侧搜索框样式end*/
+/*头部单选按钮start*/
+.main_chart{
+	width:calc(95% - 30px);
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.chart_tit{
+	width: 100%;
+	height: 25px;
+	color: #333;
+	font-size: 18px;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	border-left: #1177FB solid 3px;
+}
+.chart_content{
+	width: 100%;
+	height:60%;
+}
+/*头部单选按钮end*/
+ @media screen and (min-width: 1280px){
+.hearder_com {
+    height: 30px;
+}
+.chart_tit{
+	font-size: 16px;
+}
+.hearder_left li{
+	line-height: 34px;
+}
+}
+ @media screen and (min-width: 1366px){
+.hearder_com {
+    height: 30px;
+}
+.chart_tit{
+	font-size: 16px;
+}
+.hearder_left li{
+	line-height: 34px;
+}
+}
+ @media screen and (min-width: 1920px){
+.hearder_com {
+    height: 40px;
+}
+.chart_tit{
+	font-size: 18px;
+}
+.hearder_left li{
+	line-height:40px;
+}
+}

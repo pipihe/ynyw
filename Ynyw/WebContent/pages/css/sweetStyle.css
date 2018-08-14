@@ -1,0 +1,120 @@
+/*时间框样式*/
+.sweet-form-input{
+	box-shadow:none !important;
+	}
+.sweet-form-date-float-panel{
+	
+	background-image: none !important;
+	background-color: #fff !important;
+   
+}
+/*复选框*/
+.singlebox{
+	border: none;
+}
+.sweet-form-checkbox {
+	 margin: -4px 3px 0 3px !important;
+	}
+.sweet-form-date-float-middle-content{
+	background-color: #fff !important;
+	box-shadow: none !important;
+}
+/*.sweet-form-checkbox-unchecked {
+    background: rgba(0, 0, 0, 0) url("images/form/module_icon_bg.png") no-repeat scroll 0px -35px;
+}
+.sweet-form-checkbox-checked {
+    background: rgba(0, 0, 0, 0) url("images/form/module_icon_bg.png") no-repeat scroll 0px -35px;
+}*/
+.sweet-form-comboboxv1-gray {
+	background-image:none;
+	border:none;
+}
+.sweet-form-input-disabled {
+	background-color:#fff;
+}
+.sweet-form-input {
+	background-color:#fff;
+}
+/*其他框*/	
+.sweet-form-comboboxv1 {
+	background-image: none  !important;
+}
+.sweet-form-comboboxv1,.sweet-form-input{
+	border: none !important;
+}
+.sweet-form-comboboxv1-win{
+	
+    background: #fff !important;
+   
+}
+/* 表格 */
+.sweet-grid-header-table-td-common {
+	background-color: #fff;
+}
+.sweet-grid-header-table-td{
+	border-right: 2px #fff solid;
+}
+.sweet-grid-header table .text{
+	color: #6f7476 !important;
+}
+.failureanalysis_listcontent .sweet-grid-content {
+	height: 175px !important;
+}
+.sweet-grid-content table tr:hover{
+    background-color:#fff !important;
+}
+.sweet-grid-content table tr {
+    border-bottom:none !important;
+} 
+.sweet-grid-content table tr:nth-of-type(even) {
+	background-color: #fff !important;
+} 
+.sweet-grid-content table tr:nth-of-type(odd) {
+    background-color: #f3f5f7 !important;  
+} 
+.sweet-grid-content table tr {
+	height: 35px !important;
+	font-family: Microsoft Yahei;
+	font-size: 14px !important;
+	color: #6f7479 !important;
+}
+.sweet-grid-paging{
+    background-color: #fff !important;
+} 
+.sweet-grid-paging a{
+ background-image:none !important;
+ border:1px solid #cfcfcf;
+}   
+.sweet-grid-paging-inner{
+	padding:9px 0px;
+}
+.failureanalysis_listcontent .sweet-grid-content {
+	height: 175px !important;
+}
+.sweet-container .sweet-grid-header {
+	background-color: #fff !important; 
+}
+/* 表格分页 */
+.sweet-grid-paging-totaltext{
+	color: #6f7479 !important;
+	padding-left:0px !important;
+}
+/* 详单表格样式 */
+/* .sweet-grid-header {background-color: #fff !important;}
+#sweetTable .sweet-grid-content tbody .sweet-grid-content-tr td:nth-child(1){
+	cursor: pointer
+}
+#tableStream .sweet-grid-content tbody .sweet-grid-content-tr td:nth-child(1){
+	cursor: pointer
+} */
+/* 时间范围垂直居中  */
+.sweet-form-date-input-field{
+	height: 100%;
+    line-height: 100%;
+}
+.sweet-form-input-text{
+    height: 100%;
+}
+.sweet-form-date-pic-field{
+	margin: 2% 0;
+}

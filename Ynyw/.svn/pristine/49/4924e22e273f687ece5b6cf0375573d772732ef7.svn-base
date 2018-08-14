@@ -1,0 +1,90 @@
+ .wrapper{
+   width: 100%;
+   height:calc(100% - 20px);
+   font-family: "微软雅黑";
+   font-size: 16px;
+   background-color: #f0f2f5;
+   min-width: 1263px;
+   min-height: 610px;
+   padding-top: 20px;
+ }
+.main_success{
+	width: calc(100% - 100px);
+	margin: 0 auto;
+	height:calc(100% - 30px) ;
+	background-color: #fff;
+}
+/*标题题目样式*/
+.success_title{
+	width: 95%;
+	height:45px;
+	margin: 0 auto;
+	border-bottom: #ccc solid 1px;
+	font-size: 18px;
+	color: #666;
+	line-height: 45px;
+}
+.success_title span{
+	width: 6px;
+	height:6px;      
+	background-color:#34b5ff;      
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px;
+}
+.success_title2{
+	width: 92%;
+	height:60px;
+	margin: 0 auto;
+	font-size: 18px;
+	color: #666;
+	line-height:65px;
+}
+.success_content{
+	width: 92%;
+	height:40%;
+	margin: 0 auto;
+}
+/*饼图区域样式*/
+.bingtu1{
+	width:40%;
+	height:100%;	
+	border: #ccc solid 1px;
+	float: left;
+}
+.biaoge{
+	width:59%;
+	height:100%;	
+	border: #ccc solid 1px;
+	float: right;
+}
+.biaoge_con{
+	width: 98%;
+	height:98%;
+	margin: 0 auto;
+}
+.bingtu1_title{
+	font-size: 18px;
+	color: #3c3c3c;
+	margin: 5px 0 0 20px;
+}
+.bingtu1_con{
+	width: 90%;
+	height:88%;
+	margin:0.5% auto;
+}
+@media screen and (min-width: 1280px) {
+ .success_title,.bingtu1_title,.success_title2{
+    font-size: 16px;
+   }
+}
+@media screen and (min-width: 1920px) {
+ .bingtu1_con{
+	height:88%;
+	margin:0.5% auto;
+    }
+.success_title,.bingtu1_title,.success_title2 {
+    font-size: 18px;
+   }
+   
+}
